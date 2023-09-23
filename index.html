@@ -1,0 +1,40 @@
+<!-- link website: http://ninhdan.byethost7.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Tỷ Giá Ngoại Tệ</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-center ">Tỷ Giá Ngoại Tệ</h1>
+        
+        <!-- Hiển thị thời gian cập nhật từ cơ sở dữ liệu -->
+        <div class="alert alert-info mt-3 text-center" id="selectTime">
+        </div>
+        
+        <!-- Hiển thị tỷ giá ngoại tệ trong một bảng -->
+        <div class="mt-4">
+            <table class="table table-bordered table-striped text-center">
+                <thead class=" bg-info text-white" >
+                    <tr >
+                        <th>Top</th>
+                        <th>Mã Tiền Tệ</th>
+                        <th>Tỷ Giá</th>
+                    </tr>
+                </thead>
+                <tbody id="exchangeRates">
+                    <!-- Dữ liệu tỷ giá ngoại tệ sẽ được cập nhật thông qua JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
